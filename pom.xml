@@ -39,6 +39,12 @@
 			<version>LATEST</version>
 			<type>pom</type>
 		</dependency>
+		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>vaadin-archetype-application</artifactId>
+			<version>14.4.6</version>
+		</dependency>
+
      	<!-- gson -->
     	<dependency>
       		<groupId>com.google.code.gson</groupId>
@@ -110,7 +116,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>ufv.dis.final2021.SLG.</mainClass>
+							<mainClass>ufv.dis.final2021.SLG.CrudWithVaadinApplication</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

@@ -42,10 +42,12 @@ public class CrudWithVaadinApplication {
             // fetch customers by last name
             log.info("Customer found with findByLastNameStartsWithIgnoreCase('Abad'):");
             log.info("--------------------------------------------");
-            for (IP bauer : repository
-                    .findByLastNameStartsWithIgnoreCase("Abad")) {
+            /*for (IP bauer : repository
+                    .findByIp_from("2532573184")) {
                 log.info(bauer.toString());
             }
+            */
+
             log.info("");
         };
     }
