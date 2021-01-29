@@ -11,15 +11,15 @@ import java.util.ArrayList;
 public class LeerJson {
     private static final String dir_json = new File("LocalizaIP.json").getAbsolutePath();
     public static ArrayList<IP> leerFicheroJson(){
-        ArrayList<IP> videotecas = new ArrayList<IP>();
+        ArrayList<IP> ip = new ArrayList<IP>();
         Gson gson = new Gson();
         try {
-            videotecas = gson.fromJson(new FileReader(dir_json),new TypeToken<ArrayList<IP>>(){}.getType());
+            ip = gson.fromJson(new FileReader(dir_json),new TypeToken<ArrayList<IP>>(){}.getType());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
-        return videotecas;
+        return ip;
     }
 
 }
